@@ -19,6 +19,8 @@ public class TestConneciton {
             DataSource ds = (DataSource) ic.lookup("java:comp/env/jdbc/Library");
             Connection conn = ds.getConnection();
             Statement stmt = conn.createStatement();
+            String schema = conn.getSchema();
+            System.out.println("schema="  + schema);
             ResultSet rs = stmt.executeQuery("select * from book");
             while (rs.next()) {
                 System.out.println(rs.getString("name"));
