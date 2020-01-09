@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+
+    </h:head>
+    <h:body>
+        <div class="popup-container">
+            <f:facet name="last">
+                <h:outputStylesheet library="css" name="edit.css" />
+            </f:facet>
+
+            <p:dialog id="editDialog" modal="true" widgetVar="dlgEditBook" dynamic="true" resizable="false" closable="false" onHide="#{bookListController.cancelModes()}">
+
+                <h2>#{msg.edit_book}</h2>
+
+                <div class="popup-info">
+
+                    <p:panelGrid columns="2" columnClasses="col1, col2" styleClass="edit_book_table" >
+
+                        <p:panel id="imagePanel">
+
+                            <p:graphicImage  styleClass="avatar-box" value="#{imageController.defaultImage}" width="110" height="150" id="bookImage" rendered="#{bookListController.editMode}"/>
+                            <h:form enctype="multipart/form-data" id="formUploadImage" >
+                                <p:fileUpload id="imageUpload" label="#{msg.load}" fileUploadListener="#{imageController.handleFileUpload}" update="bookNewImage" sizeLimit="#{imageController.imageMaxSize}" allowTypes="/(\.|\/)(gif|jpe?g|png)$/" multiple="false" auto="true"/>  
+                                <p:graphicImage value="#{imageController.uploadedImage}" library="images"  id="bookNewImage" styleClass="avatar-box"/>
+                                <p:autoUpdate class="error" id="messageImage"/>
+                            </h:form>
+                            
+                              <h:form enctype="multipart/form-data" id="formUploadPdf">
+
+                                    <p:fileUpload  id="pdfUpload" value="" label="#{msg.load_pdf}" fileUploadListener="#{contentController.handleFileUpload}" update="@form" allowTypes="/(\.|\/)(pdf)$/" multiple="false" auto="true" styleClass="pdf-upload"/>  
+                                    <h:outputLink id="uploadedPdfLink" value="#{request.contextPath}/UploadedPdf"  target="_blank" styleClass="pdf-link" rendered="#{contentController.showContent}">                                                             
+                                        <p:outputLabel value="#{msg.show_uploaded_pdf}"/>
+                                    </h:outputLink> 
+                                    <autoUpdate id="messages-pdf"/>
+                                </h:form>
+
+
+                        </p:panel>
+
+
+                        <p:panel>
+
+
+
+                            <div class="ava-info">
+
+                                <h:form id="formEditBook"  rendered="#{bookListController.editMode or bookListController.addMode}">
+
+
+                                    <div class="block">
+                                        <p>#{msg.book_name}</p>
+
+                                        <div class="ava-form">
+                                            <p:inputText id="inputBookName" value="#{bookListController.selectedBook.name}" />
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="block">
+                                        <p>#{msg.author_name}</p>
+
+                                        <div class="ava-form">
+                                            <p:selectOneMenu value="#{bookListController.selectedBook.author}" converter="#{authorController}">
+                                                <f:selectItems value="${authorController.selectItems}"/>
+                                            </p:selectOneMenu>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
+
+                                    <p:outputLabel value="#{msg.genre}:" styleClass="edit-title"/>
+
+                                    <p:selectOneMenu  value="#{bookListController.selectedBook.genre}" converter="#{genreController}"  styleClass="edit-field">
+                                        <f:selectItems value="${genreController.selectItems}"/>
+                                    </p:selectOneMenu>
+
+
+
+                                    <p:outputLabel value="#{msg.publisher}:" styleClass="edit-title"/>
+
+
+                                    <p:selectOneMenu  value="#{bookListController.selectedBook.publisher}" converter="#{publisherController}"  styleClass="edit-field">
+                                        <f:selectItems value="${publisherController.selectItems}"/>
+                                    </p:selectOneMenu>
+
+
+                                    <p:outputLabel value="#{msg.publish_year}:" styleClass="edit-title"/>
+
+                                    <p:inputMask id="inputPublishYear" value="#{bookListController.selectedBook.publishYear}"  maxlength="4" styleClass="edit-field" mask="9999"/>
+
+
+<!--<p:outputLabel value="#{msg.isbn}:" styleClass="edit-title"/>-->
+
+                                    <p:inputText id="inputIsbn" value="#{bookListController.selectedBook.isbn}"  styleClass="edit-field"/>
+
+
+                                    <p:outputLabel value="#{msg.page_count}:" styleClass="edit-title"/>
+
+                                    <p:inputText id="inputPageCount" value="#{bookListController.selectedBook.pageCount}"  styleClass="edit-field"/>  
+
+                                    <p:outputLabel value="#{msg.text}:" styleClass="edit-title"/>
+
+                                    <h:outputLink value="#{request.contextPath}/PdfContent"  target="_blank" styleClass="pdf-link" rendered="#{bookListController.editMode}">                                                             
+                                        <p:outputLabel value="#{msg.show_pdf}"/>
+                                        <f:param name="id" value="#{bookListController.selectedBook.id}"/>
+                                    </h:outputLink> 
+
+                                    <p:outputLabel rendered="#{bookListController.editMode}"/> 
+
+
+
+
+
+
+
+                                    <p:outputLabel value="#{msg.descr}:" styleClass="edit-title"/>
+
+                                    <p:panel styleClass="descr-text">
+                                        <p:inputTextarea id="inputDescr" value="#{bookListController.selectedBook.descr}" cols="60" rows="20" maxlength="1500" counter="counter" counterTemplate="#{msg.letters_left} {0}" autoResize="false"  />
+                                        <h:outputText id="counter" />  
+                                    </p:panel>
+
+
+
+                                    <f:facet name="footer">
+
+                                        <h:messages styleClass="error"/>
+
+
+                                        <p:commandButton id="saveButton" action="#{bookListController.saveBook()}" styleClass="button-update" value="#{msg.save}" icon="ui-icon-check"  onclick="this.disabled = true;" update=":formEditBook :booksForm:booksList :booksCount"/>
+                                        <p:commandButton action="#{bookListController.cancelModes()}" icon="ui-icon-close"  value="#{msg.cancel}" immediate="true" global="false"/>
+
+                                    </f:facet>
+
+                                </h:form> 
+
+
+                              
+
+                            </div>
+
+                        </p:panel>
+
+                    </p:panelGrid>
+
+
+
+
+
+
+                </div>
+
+            </p:dialog>
+
+
+
+        </div>
+    </h:body>
+</html>
+
