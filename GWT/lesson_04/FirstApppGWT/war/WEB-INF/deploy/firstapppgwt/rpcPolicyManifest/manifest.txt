@@ -1,0 +1,3 @@
+# Module firstapppgwt
+# RPC service class, partial path of RPC policy file
+ru.javabegin.training.gwt.client.GreetingService, 5E4FD008B7F8CE184EFDE1D8BC4E0D87.gwt.rpc

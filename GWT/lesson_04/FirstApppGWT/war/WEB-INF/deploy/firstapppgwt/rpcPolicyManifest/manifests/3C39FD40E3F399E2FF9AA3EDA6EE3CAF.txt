@@ -1,0 +1,2 @@
+serviceClass: ru.javabegin.training.gwt.client.GreetingService
+path: 5E4FD008B7F8CE184EFDE1D8BC4E0D87.gwt.rpc
