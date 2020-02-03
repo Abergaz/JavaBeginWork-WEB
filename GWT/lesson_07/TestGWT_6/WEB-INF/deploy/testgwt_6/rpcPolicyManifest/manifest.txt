@@ -1,0 +1,3 @@
+# Module testgwt_6
+# RPC service class, partial path of RPC policy file
+ru.javabegin.training.gwt.client.StringService, 06DEA0ED55207760AA48931C03BB9DB0.gwt.rpc

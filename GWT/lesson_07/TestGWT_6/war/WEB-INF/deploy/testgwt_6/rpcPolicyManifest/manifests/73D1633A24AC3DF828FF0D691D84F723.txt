@@ -1,0 +1,2 @@
+serviceClass: ru.javabegin.training.gwt.client.StringService
+path: 06DEA0ED55207760AA48931C03BB9DB0.gwt.rpc
