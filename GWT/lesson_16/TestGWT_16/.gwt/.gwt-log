@@ -1,0 +1,127 @@
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2742 units from cache.
+Compiling...
+   Compilation completed in 3,18 seconds
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel.TestPanelUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359286272.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359286272.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359286272_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel.TestPanelUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359286619.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359286619.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359286619_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel.TestPanelUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359305358.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359305358.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359305358_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel.TestPanelUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359386172.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359386172.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359386172_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel.TestPanelUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359386201.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359386201.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel_TestPanelUiBinderImpl_designTime1418359386201_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding ru.javabegin.training.gwt.client.ui.TestPanel.TestPanelUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] com.google.gwt.user.client.ui.SimpleRadioButton has no default (zero args) constructor. To fix this, you can define a @UiFactory method on the UiBinder's owner, or annotate a constructor of SimpleRadioButton with @UiConstructor.
+[ERROR] Deferred binding failed for 'ru.javabegin.training.gwt.client.ui.TestPanel.TestPanelUiBinder'; expect subsequent failures
