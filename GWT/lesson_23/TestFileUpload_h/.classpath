@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="com.gwtplugins.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="/Users/Tim/Google Drive/javabegin/src/web/4. gwt/TestFileUpload_h/libs/commons-fileupload-1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/Tim/Google Drive/javabegin/src/web/4. gwt/TestFileUpload_h/libs/gxt-4.0.0.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

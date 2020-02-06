@@ -1,0 +1,97 @@
+Public resources found in...
+Translatable source found in...
+Found 2737 cached/archived units.  Used 2737 / 2738 units from cache.
+Compiling...
+   Compilation completed in 0,28 seconds
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,05 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.user.client.ui.FormPanel.IFrameTemplate
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.user.client.ui.FormPanel.IFrameTemplate
+         Generating method body for get()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,03 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2738 units from cache.
+Compiling...
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   70% complete (ETR: 2 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 13,35 seconds
+Validating units:
+   Errors in 'file:/C:/work/gwt/TestFileUpload_h/src/ru/javabegin/training/gwt/client/TestFileUpload.java'
+      Line 35: No source code is available for type com.sencha.gxt.widget.core.client.FramedPanel; did you forget to inherit a required module?
+      Line 41: No source code is available for type com.sencha.gxt.widget.core.client.container.BoxLayoutContainer.BoxLayoutPack; did you forget to inherit a required module?
+      Line 43: No source code is available for type com.sencha.gxt.widget.core.client.container.MarginData; did you forget to inherit a required module?
+      Line 45: No source code is available for type com.sencha.gxt.widget.core.client.form.FormPanel; did you forget to inherit a required module?
+      Line 47: No source code is available for type com.sencha.gxt.widget.core.client.form.FormPanel.Encoding; did you forget to inherit a required module?
+      Line 48: No source code is available for type com.sencha.gxt.widget.core.client.form.FormPanel.Method; did you forget to inherit a required module?
+      Line 51: No source code is available for type com.sencha.gxt.widget.core.client.container.VerticalLayoutContainer; did you forget to inherit a required module?
+      Line 54: No source code is available for type com.sencha.gxt.widget.core.client.form.TextField; did you forget to inherit a required module?
+      Line 56: No source code is available for type com.sencha.gxt.widget.core.client.form.FieldLabel; did you forget to inherit a required module?
+      Line 56: No source code is available for type com.sencha.gxt.widget.core.client.container.VerticalLayoutContainer.VerticalLayoutData; did you forget to inherit a required module?
+      Line 58: No source code is available for type com.sencha.gxt.widget.core.client.form.FileUploadField; did you forget to inherit a required module?
+      Line 63: No source code is available for type com.sencha.gxt.widget.core.client.info.Info; did you forget to inherit a required module?
+      Line 71: No source code is available for type com.sencha.gxt.widget.core.client.button.TextButton; did you forget to inherit a required module?
+      Line 72: No source code is available for type com.sencha.gxt.widget.core.client.event.SelectEvent.SelectHandler; did you forget to inherit a required module?
+      Line 75: No source code is available for type com.sencha.gxt.widget.core.client.event.SelectEvent; did you forget to inherit a required module?
+      Line 95: No source code is available for type com.sencha.gxt.widget.core.client.box.MessageBox; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+   [ERROR] Errors in 'file:/C:/work/gwt/TestFileUpload_h/src/ru/javabegin/training/gwt/client/TestFileUpload.java'
+      [ERROR] Line 35: No source code is available for type com.sencha.gxt.widget.core.client.FramedPanel; did you forget to inherit a required module?
+      [ERROR] Line 41: No source code is available for type com.sencha.gxt.widget.core.client.container.BoxLayoutContainer.BoxLayoutPack; did you forget to inherit a required module?
+      [ERROR] Line 43: No source code is available for type com.sencha.gxt.widget.core.client.container.MarginData; did you forget to inherit a required module?
+      [ERROR] Line 45: No source code is available for type com.sencha.gxt.widget.core.client.form.FormPanel; did you forget to inherit a required module?
+      [ERROR] Line 47: No source code is available for type com.sencha.gxt.widget.core.client.form.FormPanel.Encoding; did you forget to inherit a required module?
+      [ERROR] Line 48: No source code is available for type com.sencha.gxt.widget.core.client.form.FormPanel.Method; did you forget to inherit a required module?
+      [ERROR] Line 51: No source code is available for type com.sencha.gxt.widget.core.client.container.VerticalLayoutContainer; did you forget to inherit a required module?
+      [ERROR] Line 54: No source code is available for type com.sencha.gxt.widget.core.client.form.TextField; did you forget to inherit a required module?
+      [ERROR] Line 56: No source code is available for type com.sencha.gxt.widget.core.client.form.FieldLabel; did you forget to inherit a required module?
+      [ERROR] Line 56: No source code is available for type com.sencha.gxt.widget.core.client.container.VerticalLayoutContainer.VerticalLayoutData; did you forget to inherit a required module?
+      [ERROR] Line 58: No source code is available for type com.sencha.gxt.widget.core.client.form.FileUploadField; did you forget to inherit a required module?
+      [ERROR] Line 63: No source code is available for type com.sencha.gxt.widget.core.client.info.Info; did you forget to inherit a required module?
+      [ERROR] Line 71: No source code is available for type com.sencha.gxt.widget.core.client.button.TextButton; did you forget to inherit a required module?
+      [ERROR] Line 72: No source code is available for type com.sencha.gxt.widget.core.client.event.SelectEvent.SelectHandler; did you forget to inherit a required module?
+      [ERROR] Line 75: No source code is available for type com.sencha.gxt.widget.core.client.event.SelectEvent; did you forget to inherit a required module?
+      [ERROR] Line 95: No source code is available for type com.sencha.gxt.widget.core.client.box.MessageBox; did you forget to inherit a required module?
+   [ERROR] Unable to find type 'ru.javabegin.training.gwt.client.TestFileUpload'
+      [ERROR] Hint: Previous compiler errors may have made this type unavailable
+      [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
